@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sherwin's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Space+Grotesk:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand text-dark fw-bold" href="#home"
+          ><i class="fa-sharp fa-solid fa-house"></i
+        ></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-bold"
+                href="#about"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-bold"
+                href="#projects"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-bold"
+                href="#skills"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-dark fw-bold"
+                href="#contact"
+                data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse.show"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container">
+        <h1 class="display-4">
+          <span class="first-name">SHERWIN</span>
+          <span class="last-name">PAGALILAWAN</span>
+        </h1>
+        <p class="lead">
+          <span class="line">Portfolio</span>
+          <span class="line">Showcasing the</span>
+          <span class="line">Projects I have</span>
+          <span class="line">worked on</span>
+        </p>
+        <a href="#projects" class="cta-button">
+          <i class="fa-sharp fa-solid fa-power-off"></i> View Projects
+        </a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section futuristic-about" id="about">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="about-card p-4">
+          <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+              <img
+                src="assets/about.jpg"
+                alt="Sherwin Pagalilawan"
+                class="img-fluid rounded futuristic-img"
+              />
+              <h4 class="text-white mt-3">SHERWIN PAGALILAWAN</h4>
+              <p class="text-muted">Aspiring Web Developer</p>
+            </div>
+            <div class="col-md-8">
+              <h5 class="text-white mb-3">ABOUT ME</h5>
+              <p class="text-light">
+                I'm Sherwin, a passionate learner taking small steps toward
+                building a career in tech. I enjoy exploring web technologies
+                and solving real-world problems with code.
+              </p>
+              <p class="text-light">
+                I thrive in collaborative environments, value continuous
+                learning, and am actively working on personal and team-based
+                projects to grow as a developer.
+              </p>
+              <div class="mt-4">
+                <a href="https://github.com" class="btn btn-circle"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://linkedin.com" class="btn btn-circle"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a href="https://gmail.com" class="btn btn-circle"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="hero" id="projects">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Projects</h2>
+        <div id="projectsCarousel" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <!-- Project 1 - E-Commerce -->
+            <div class="carousel-item active">
+              <div
+                class="card project-card"
+                data-bs-toggle="modal"
+                data-bs-target="#projectModal"
+                data-title="E-Commerce Platform"
+                data-desc="Developed a complete online store with shopping cart, user authentication, and Stripe payment integration. Implemented product filtering and admin dashboard."
+                data-tech="React, Node.js, MongoDB, Stripe API, Redux"
+                data-img="assets/ecom.jpg"
+              >
+                <img
+                  src="assets/ecom.jpg"
+                  class="card-img-top"
+                  alt="E-Commerce Project"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">E-Commerce Platform</h5>
+                  <p class="card-text text-muted">Full-featured online store</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 - Task Manager -->
+            <div class="carousel-item">
+              <div
+                class="card project-card"
+                data-bs-toggle="modal"
+                data-bs-target="#projectModal"
+                data-title="Task Management App"
+                data-desc="Built a collaborative task manager with real-time updates, drag-and-drop interface, and team assignment features. Includes progress tracking and notifications."
+                data-tech="Vue.js, Firebase, Tailwind CSS, Vuex"
+                data-img="assets/task.jpg"
+              >
+                <img
+                  src="assets/task.jpg"
+                  class="card-img-top"
+                  alt="Task App"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Task Management App</h5>
+                  <p class="card-text text-muted">Team productivity tool</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 - Weather Dashboard -->
+            <div class="carousel-item">
+              <div
+                class="card project-card"
+                data-bs-toggle="modal"
+                data-bs-target="#projectModal"
+                data-title="Weather Dashboard"
+                data-desc="Created a weather application with 5-day forecasts, location search, and interactive charts. Features temperature unit conversion and severe weather alerts."
+                data-tech="JavaScript, OpenWeather API, Chart.js, Bootstrap"
+                data-img="assets/weather.jpg"
+              >
+                <img
+                  src="assets/weather.jpg"
+                  class="card-img-top"
+                  alt="Weather App"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Weather Dashboard</h5>
+                  <p class="card-text text-muted">
+                    Interactive weather forecasts
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 - Recipe Finder -->
+            <div class="carousel-item">
+              <div
+                class="card project-card"
+                data-bs-toggle="modal"
+                data-bs-target="#projectModal"
+                data-title="Recipe Finder"
+                data-desc="Developed a recipe search engine with dietary filters, saved favorites, and meal planning. Includes step-by-step cooking instructions and ingredient substitution suggestions."
+                data-tech="React, Edamam API, Material UI, Context API"
+                data-img="assets/recipe.jpg"
+              >
+                <img
+                  src="assets/recipe.jpg"
+                  class="card-img-top"
+                  alt="Recipe App"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Recipe Finder</h5>
+                  <p class="card-text text-muted">Culinary inspiration tool</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 - Fitness Tracker -->
+            <div class="carousel-item">
+              <div
+                class="card project-card"
+                data-bs-toggle="modal"
+                data-bs-target="#projectModal"
+                data-title="Fitness Tracker"
+                data-desc="Built a workout logging application with exercise database, progress tracking, and workout planning. Features rest timers and exercise demonstration videos."
+                data-tech="Angular, Firebase, D3.js, RxJS"
+                data-img="assets/fitness.jpg"
+              >
+                <img
+                  src="assets/fitness.jpg"
+                  class="card-img-top"
+                  alt="Fitness App"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Fitness Tracker</h5>
+                  <p class="card-text text-muted">Workout companion app</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#projectsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="projectModalLabel">Project Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img
+              src=""
+              class="img-fluid mb-4"
+              id="modalProjectImage"
+              alt="Project Image"
+            />
+            <h4 id="modalProjectTitle"></h4>
+            <p id="modalProjectDesc"></p>
+            <div class="tech-badges mt-3" id="modalProjectTech"></div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <a
+              href="https://http.cat/404"
+              class="btn btn-primary"
+              target="_blank"
+              id="liveDemoBtn"
+            >
+              <i class="fas fa-external-link-alt me-2"></i>View Live Demo
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <section class="section futuristic-about" id="skills">
+      <div class="container text-white">
+        <h2 class="text-center mb-5 fw-bold">Technical Skills</h2>
+        <div class="row">
+          <!-- Frontend Skills -->
+          <div class="col-md-6 mb-4">
+            <h4 class="text-center mb-4">
+              <i class="fas fa-laptop-code me-2"></i>Frontend
+            </h4>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>HTML/CSS</span>
+                <span>9/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>JavaScript</span>
+                <span>8/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>React</span>
+                <span>7/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>Vue.js</span>
+                <span>6/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend/Database Skills -->
+          <div class="col-md-6 mb-4">
+            <h4 class="text-center mb-4">
+              <i class="fas fa-server me-2"></i>Backend & Databases
+            </h4>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>Node.js</span>
+                <span>7/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>MongoDB</span>
+                <span>6/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>Firebase</span>
+                <span>6/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>MySQL</span>
+                <span>5/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-success"
+                  role="progressbar"
+                  style="width: 50%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Other Skills -->
+        <div class="row mt-4">
+          <div class="col-md-6 mb-4">
+            <h4 class="text-center mb-4">
+              <i class="fas fa-tools me-2"></i>Tools & Libraries
+            </h4>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>Bootstrap</span>
+                <span>8/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>Tailwind CSS</span>
+                <span>6/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-info"
+                  role="progressbar"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h4 class="text-center mb-4">
+              <i class="fas fa-plug me-2"></i>APIs
+            </h4>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>Stripe API</span>
+                <span>7/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 70%"
+                ></div>
+              </div>
+            </div>
+            <div class="skill-item mb-3">
+              <div class="d-flex justify-content-between">
+                <span>OpenWeather API</span>
+                <span>6/10</span>
+              </div>
+              <div class="progress" style="height: 10px">
+                <div
+                  class="progress-bar bg-warning"
+                  role="progressbar"
+                  style="width: 60%"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="hero" id="contact">
+      <div class="container">
+        <h2 class="text-center mb-5">Contact Me</h2>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" required />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-4 border-top">
+      <div class="container">
+        <p class="text-dark mb-3">Connect with me on</p>
+        <div class="mb-3">
+          <a href="https://linkedin.com" class="text-dark me-3"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://github.com" class="text-dark me-3"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://x.com" class="text-dark"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <p class="text-muted mb-0">&copy; 2025 Sherwin Pagalilawan</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Initialize carousel with infinite loop
+      document.addEventListener("DOMContentLoaded", function () {
+        const myCarousel = new bootstrap.Carousel("#projectsCarousel", {
+          interval: false,
+          wrap: true,
+          touch: true, // Enable touch swiping on mobile
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize modal event listener
+        const projectModal = document.getElementById("projectModal");
+        if (projectModal) {
+          projectModal.addEventListener("show.bs.modal", function (event) {
+            const button = event.relatedTarget;
+
+            // Get project data from clicked card
+            const title = button.getAttribute("data-title") || "Project Title";
+            const desc =
+              button.getAttribute("data-desc") || "No description available";
+            const tech = button.getAttribute("data-tech") || "";
+            const imgSrc =
+              button.getAttribute("data-img") ||
+              "https://via.placeholder.com/800x500?text=Project+Image";
+
+            // Set modal content
+            document.getElementById("modalProjectTitle").textContent = title;
+            document.getElementById("modalProjectDesc").textContent = desc;
+
+            // Handle the image - add error fallback
+            const imgElement = document.getElementById("modalProjectImage");
+            imgElement.src = imgSrc;
+            imgElement.onerror = function () {
+              this.src =
+                "https://via.placeholder.com/800x500?text=Image+Not+Found";
+            };
+
+            // Clear and rebuild tech badges
+            const techBadges = document.getElementById("modalProjectTech");
+            techBadges.innerHTML = "";
+
+            if (tech) {
+              tech.split(", ").forEach(function (techItem) {
+                const badge = document.createElement("span");
+                badge.textContent = techItem.trim();
+                techBadges.appendChild(badge);
+              });
+            }
+          });
+        }
+      });
+      // Animate progress bars when scrolling to skills section
+      document.addEventListener("DOMContentLoaded", function () {
+        const skillsSection = document.getElementById("skills");
+        const progressBars = document.querySelectorAll(".progress-bar");
+
+        const animateProgressBars = () => {
+          progressBars.forEach((bar) => {
+            const width = bar.style.width;
+            bar.style.width = "0";
+            setTimeout(() => {
+              bar.style.width = width;
+            }, 100);
+          });
+        };
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                animateProgressBars();
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.2 }
+        );
+
+        if (skillsSection) {
+          observer.observe(skillsSection);
+        }
+      });
+      // Close navbar when clicking a link
+      document.querySelectorAll(".navbar-nav .nav-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          const navbarCollapse = document.querySelector(".navbar-collapse");
+          if (navbarCollapse.classList.contains("show")) {
+            const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+              toggle: false,
+            });
+            bsCollapse.hide();
+          }
+        });
+      });
+
+      // Smooth scrolling for all links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            window.scrollTo({
+              top: target.offsetTop - 70, // Adjust for fixed navbar height
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
